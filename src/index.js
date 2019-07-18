@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import tweetService from "./service/tweet";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+tweetService.getProfileTweets().then(result => {
+    console.log({result})
+});
+
+
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
