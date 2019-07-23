@@ -1,13 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './styles/index.scss';
 import * as serviceWorker from './serviceWorker';
-import tweetService from "./service/tweet";
-
-tweetService.getProfileTweets().then(result => {
-    console.log({result})
-});
+import App from "./App";
 
 
 ReactDOM.render(<App/>, document.getElementById('root'));

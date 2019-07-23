@@ -1,0 +1,16 @@
+.list {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  overflow-x: auto;
+
+  & > div {
+    width: 32%;
+
+    min-width: 400px;
+
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
